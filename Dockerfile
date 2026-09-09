@@ -25,4 +25,9 @@ RUN mkdir -p /opt/comfyui-baked/models/vae_approx && \
     wget -O /opt/comfyui-baked/models/vae_approx/taeh3.safetensors \
     https://huggingface.co/Kijai/MiniMax-H3-TAE/resolve/main/vae_approx/taeh3.safetensors
 
+    # ComfyUI v0.35.0 に合わせて依存関係を更新
+RUN pip install --no-cache-dir --force-reinstall \
+    "comfy-kitchen==0.2.33" \
+    "comfy-aimdo==0.5.3"
+
 EXPOSE 8188 8888 8080 22
