@@ -14,10 +14,4 @@ RUN git clone https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.g
     cd /opt/comfyui-baked/custom_nodes/Comfyui_Minimax_h3_latent_Upscaler && \
     git checkout d7c01b9011f2e8439493f6c02c29995a27df276f
 
-# RunpodDirect
-RUN git clone https://github.com/MadiatorLabs/ComfyUI-RunpodDirect.git \
-    /opt/comfyui-baked/custom_nodes/ComfyUI-RunpodDirect && \
-    cd /opt/comfyui-baked/custom_nodes/ComfyUI-RunpodDirect && \
-    git checkout a59de479cbf06064d3a67f1457f48dbbd7f42e0a
-
 EXPOSE 8188 8888 8080 22
