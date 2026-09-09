@@ -8,12 +8,6 @@ RUN rm -rf /opt/comfyui-baked && \
     cd /opt/comfyui-baked && \
     git checkout 40c4fcdf513a4523e39d54a9d391908af8df8171
 
-# KJNodes
-RUN git clone https://github.com/kijai/ComfyUI-KJNodes.git \
-    /opt/comfyui-baked/custom_nodes/ComfyUI-KJNodes && \
-    cd /opt/comfyui-baked/custom_nodes/ComfyUI-KJNodes && \
-    git checkout e0c3fcb388464ffba5ef775bd29e2f793c032ca9
-
 # MiniMax H3 Latent Upscaler
 RUN git clone https://github.com/LBH-123-AI/Comfyui_Minimax_h3_latent_Upscaler.git \
     /opt/comfyui-baked/custom_nodes/Comfyui_Minimax_h3_latent_Upscaler && \
